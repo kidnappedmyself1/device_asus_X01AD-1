@@ -222,6 +222,11 @@ PRODUCT_PACKAGES += \
     libfmjni
 
 # Framework detect
+# Doze
+PRODUCT_PACKAGES += \
+    AsusDoze
+
+# FM
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
