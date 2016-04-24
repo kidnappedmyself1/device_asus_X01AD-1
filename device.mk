@@ -169,6 +169,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
 # Framework detect
+# Doze
+PRODUCT_PACKAGES += \
+    AsusDoze
+
+# FM
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
