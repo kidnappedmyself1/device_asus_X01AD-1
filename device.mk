@@ -466,3 +466,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/X01AD/X01AD-vendor.mk)
+
+# ZenfoneParts
+PRODUCT_PACKAGES += \
+    ZenfoneParts
