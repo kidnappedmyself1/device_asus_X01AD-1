@@ -594,4 +594,7 @@
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
+    <!-- Flashlight on power button -->
+    <integer name="config_flashlightProximityTimeout">-1</integer>
+
 </resources>
