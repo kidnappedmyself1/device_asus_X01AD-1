@@ -5,7 +5,6 @@ type proc_boot_reason, fs_type, proc_type;
 type camera_socket, file_type, data_file_type;
 type sysfs_wifi, sysfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
-type kcal_dev, sysfs_type, fs_type;
 
 # Fingerprint
 type cdfinger_data_file, core_data_file_type, data_file_type, file_type;
@@ -24,3 +23,14 @@ type debugfs_rmt, debugfs_type, fs_type;
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
 type proc_tpd_gesture, fs_type, proc_type;
+type sysfs_call_status, sysfs_type, fs_type;
+type sysfs_wifi, sysfs_type, fs_type;
+
+# ZenParts
+type kcal_dev, sysfs_type, fs_type;
+type sysfs_backlight, sysfs_type, fs_type;
+type sysfs_egain, sysfs_type, fs_type;
+type sysfs_hgain, sysfs_type, fs_type;
+type sysfs_mgain, sysfs_type, fs_type;
+type sysfs_fcharge, sysfs_type, fs_type;
+type sysfs_tbrightness, sysfs_type, fs_type;
