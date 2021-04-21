@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt
 
+# ZenParts
+PRODUCT_PACKAGES += \
+    ZenParts
+
 # CNE
 PRODUCT_PACKAGES += \
     libcnefeatureconfig

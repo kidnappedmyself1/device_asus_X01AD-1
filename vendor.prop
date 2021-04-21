@@ -47,6 +47,7 @@ ro.bluetooth.a2dp_offload.supported=false
 vendor.qcom.bluetooth.soc=pronto
 
 # Camera
+persist.camera.eis.enable=1
 persist.camera.CDS=off
 persist.camera.gyro.android=0
 persist.camera.is_type=1
