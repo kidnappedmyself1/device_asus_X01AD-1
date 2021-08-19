@@ -342,9 +342,6 @@
          empty string is passed in -->
      <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
 
-     <!-- Telephony qualified networks service package name to bind to by default. -->
-     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
-
     <!--  Define Google play service package for FRP-->
      <string name="config_persistentDataPackageName">com.google.android.gms</string>
 
