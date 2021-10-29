@@ -30,9 +30,9 @@ BOARD_VENDOR := asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRODUCT_MODEL=ASUS_X01AD \
-    PRIVATE_BUILD_DISC="redfin-user 11 RQ3A.210905.001 7511028 release-keys"
+    PRIVATE_BUILD_DISC="redfin-user 12 SP1A.211105.003 7757856 release-keys"
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
