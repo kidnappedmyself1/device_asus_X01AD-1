@@ -169,7 +169,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGOPrebuilt
 
 # CNE
 PRODUCT_PACKAGES += \
