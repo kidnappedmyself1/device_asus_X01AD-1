@@ -41,15 +41,23 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
+#include <vector>
+
+#include <android-base/logging.h>
+
 using android::base::GetProperty;
+using std::string;
 
 void property_override(char const prop[], char const value[], bool add = true)
 {
-    auto pi = (prop_info *) __system_property_find(prop);
+    auto pi = (prop_info *)__system_property_find(prop);
 
-    if (pi != nullptr) {
+    if (pi != nullptr)
+    {
         __system_property_update(pi, value, strlen(value));
-    } else if (add) {
+    }
+    else if (add)
+    {
         __system_property_add(prop, strlen(prop), value, strlen(value));
     }
 }
@@ -67,7 +75,8 @@ void check_device()
 
     sysinfo(&sys);
 
-    if (sys.totalram > 5072ull * 1024 * 1024) {
+    if (sys.totalram > 5072ull * 1024 * 1024)
+    {
         // from - phone-xhdpi-6144-dalvik-heap.mk
         heapstartsize = "16m";
         heapgrowthlimit = "256m";
@@ -75,7 +84,9 @@ void check_device()
         heaptargetutilization = "0.5";
         heapminfree = "8m";
         heapmaxfree = "32m";
-    } else if (sys.totalram > 3072ull * 1024 * 1024) {
+    }
+    else if (sys.totalram > 3072ull * 1024 * 1024)
+    {
         // from - phone-xxhdpi-4096-dalvik-heap.mk
         heapstartsize = "8m";
         heapgrowthlimit = "256m";
@@ -83,7 +94,9 @@ void check_device()
         heaptargetutilization = "0.6";
         heapminfree = "8m";
         heapmaxfree = "16m";
-    } else {
+    }
+    else
+    {
         // from - phone-xhdpi-2048-dalvik-heap.mk
         heapstartsize = "8m";
         heapgrowthlimit = "192m";
@@ -105,4 +118,7 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+    property_override("ro.build.description", "redfin-user 12 SQ1A.220105.002 7961164 release-keys");
+    property_override("ro.build.fingerprint", "google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys");
+    property_override("ro.vendor.build.fingerprint", "google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys");
 }

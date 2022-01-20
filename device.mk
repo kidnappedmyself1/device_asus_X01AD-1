@@ -388,6 +388,9 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(LOCAL_PATH):libinit_X01AD
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
