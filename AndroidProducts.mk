@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X01AD.mk
+    $(LOCAL_DIR)/streak_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X01AD-user \
-    aosp_X01AD-userdebug \
-    aosp_X01AD-eng
+    streak_X01AD-user \
+    streak_X01AD-userdebug \
+    streak_X01AD-eng
